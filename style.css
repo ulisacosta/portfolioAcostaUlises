@@ -1,8 +1,40 @@
 .fa-brands, .fa-solid {
-    
     font-size: 50px;
 }
 
+.fa-html5{
+    color: #ff5722;
+}
+
+.fa-css3{
+color: #004ce8;
+}
+
+.fa-square-js{
+    color: #ffdf00;
+}
+
+.fa-node{
+    color:#5cad47 ;
+}
+
+.fa-git-alt{
+    color:#f15233 ;
+}
+
+
+.fa-database{
+    color:#a29edd ;
+}
+
+
+.fa-linkedin{
+    color: #0077b5;
+}
+
+.fa-instagram{
+    color: #ff5a5a;
+}
 
 @media screen and (max-width: 1158px) {
     .fa-brands,.fa-solid{
