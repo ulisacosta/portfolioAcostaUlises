@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,67 +10,155 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <script src="https://kit.fontawesome.com/ffb2fdaeb4.js" crossorigin="anonymous"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="flex flex-col justify-center items-center  ">
 
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+</head>
+
+<body class="flex flex-col justify-center items-center  ">
+   
     <main class="container border-solid border-2 border-b-0 w-2/4 border-black">
         <header class="grid grid-cols-2 border-b-4 border-black">
-        <div class="flex justify-around border-r-4 border-black">
-            <i class="fa-brands fa-html5 animate__animated animate__heartBeat animate__slower " ></i>
-            <i class="fa-brands fa-css3 animate__animated animate__heartBeat animate__slower "></i>
-            <i class="fa-brands fa-square-js animate__animated animate__heartBeat animate__slower "></i>
-            <i class="fa-brands fa-node animate__animated animate__heartBeat animate__slower "></i>
-            <i class="fa-brands fa-git-alt animate__animated animate__heartBeat animate__slower "></i>
-            <i class="fa-solid fa-database animate__animated animate__heartBeat animate__slower "></i>
-        </div>
-        <div class="flex justify-around">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-instagram"></i>
-        </div>
-    </header>
-    
-    <section class="grid grid-cols-2 border-b-4 border-t-4 border-black mt-4">
-        <div class=" border-r-4 border-black">
-            <p class="text-center">ACOSTA ULISES</p>
-        </div>
-        <div class=" ">
-            <p class="text-center">Web developer</p>
-        </div>
-    </section>
-
-    <section class="border-2 w-2/4 border-black border-t-0 border-b-0 m-auto h-1/4">
-       
-        <div class="border-b-2 border-black" >
-            <p class="text-center">SOBRE MI</p>
-        </div>
-        <div >
-            <p class="text-center"></p>
-        </div>
-    </section>
-
-    <section class="border-t-2 border-black ">
-        <div class="mt-4">
-            <p class="text-center">TRABAJOS</p>
-        </div>
-        <div class="w-3/4 mx-auto mt-4 grid justify-around gap-4">
-            <div class="">
-                <img src="img/LOGIN.PNG" alt="">
+            <div class="flex justify-around border-r-4 border-black">
+                <i class="fa-brands fa-html5 animate__animated animate__heartBeat animate__slower "></i>
+                <i class="fa-brands fa-css3 animate__animated animate__heartBeat animate__slower "></i>
+                <i class="fa-brands fa-square-js animate__animated animate__heartBeat animate__slower "></i>
+                <i class="fa-brands fa-node animate__animated animate__heartBeat animate__slower "></i>
+                <i class="fa-brands fa-git-alt animate__animated animate__heartBeat animate__slower "></i>
+                <i class="fa-solid fa-database animate__animated animate__heartBeat animate__slower "></i>
             </div>
-
-            <div class="border-2">
-                <img src="img/LOGIN.PNG" alt="">
+            <div class="flex justify-around">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
             </div>
-            
-        </div>
-    </section>
+        </header>
+
+        <section class="grid grid-cols-2 border-b-4 border-t-4 border-black mt-4">
+            <div class=" border-r-4 border-black">
+                <p class="text-center">ACOSTA ULISES <i class="fa-regular fa-circle-check"></i></p>
+            </div>
+            <div class=" ">
+                <p class="text-center">Web developer</p>
+            </div>
+        </section>
+
+        <section class="border-2 w-2/4 border-black border-t-0 border-b-0 m-auto h-1/4">
+
+            <div class="border-b-2 border-black">
+                <p class="text-center">SOBRE MI</p>
+            </div>
+            <div>
+                <p class="text-center">p</p>
+            </div>
+        </section>
+
+        <section class="border-t-2 border-black ">
+            <div class="mt-4">
+                <p class="text-center">TRABAJOS</p>
+            </div>
+            <div class="w-3/4 mx-auto mt-4 grid justify-around gap-4">
+                <div class="">
+
+                    <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="img/LOGIN.PNG" alt="">
+                            </li>
+                            <li class="splide__slide">
+                              <img src="img/LOGIN.PNG" alt="">
+                            </li>
+                            <li class="splide__slide">
+                              <img src="img/LOGIN.PNG" alt="">
+                            </li>
+                            <li class="splide__slide">
+                              <img src="img/LOGIN.PNG" alt="">
+                            </li>
+                          </ul>
+                        </div>
+                      </section>
+                      
+                      
+                      <ul id="thumbnails" class="thumbnails">
+                        <li class="thumbnail">
+                          <img src="img/LOGIN.PNG" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="img/LOGIN.PNG" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="img/LOGIN.PNG" alt="">
+                        </li>
+                        <li class="thumbnail">
+                          <img src="img/LOGIN.PNG" alt="">
+                        </li>
+                      </ul>
+
+                </div>
+
+                <div class="border-2">
+                    <img src="img/LOGIN.PNG" alt="">
+                </div>
+
+            </div>
+        </section>
     </main>
 
+    <script>
+        
+        var splide = new Splide( '#main-carousel', {
+  pagination: false,
+} );
+
+
+var thumbnails = document.getElementsByClassName( 'thumbnail' );
+var current;
+
+
+for ( var i = 0; i < thumbnails.length; i++ ) {
+  initThumbnail( thumbnails[ i ], i );
+}
+
+
+function initThumbnail( thumbnail, index ) {
+  thumbnail.addEventListener( 'click', function () {
+    splide.go( index );
+  } );
+}
+
+
+splide.on( 'mounted move', function () {
+  var thumbnail = thumbnails[ splide.index ];
+
+
+  if ( thumbnail ) {
+    if ( current ) {
+      current.classList.remove( 'is-active' );
+    }
+
+
+    thumbnail.classList.add( 'is-active' );
+    current = thumbnail;
+  }
+} );
+
+
+splide.mount();
+    </script>
+    
     <script src="index.js"></script>
+
+
 </body>
+
 </html>
