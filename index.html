@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/maletin.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="style.css">
 
@@ -15,20 +15,18 @@
   <script src="https://kit.fontawesome.com/ffb2fdaeb4.js" crossorigin="anonymous"></script>
 
   <script src="https://cdn.tailwindcss.com"></script>
+  
 
-  <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
-  <link href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
 </head>
 
-<body class="flex flex-col justify-center items-center  ">
+<body class="flex flex-col justify-center items-center  bg-slate-100 ">
 
-  <main class="container border-solid border-2 border-b-0 w-3/4 border-black">
-    <header class="grid grid-cols-2 border-b-4 border-black">
-      <div class="flex justify-around border-r-4 border-black">
+  <main class="container border-solid border-2 border-b-0 w-3/4 min-[0px]:w-screen  max-[943px]:w-screen  rounded-t border-blue-800 bg-white">
+    <header class="grid grid-cols-2 border-b-4 border-blue-800">
+      <div class="flex justify-around border-r-4 border-blue-800">
         <i class="fa-brands fa-html5 animate__animated animate__heartBeat animate__slower "></i>
         <i class="fa-brands fa-css3 animate__animated animate__heartBeat animate__slower "></i>
         <i class="fa-brands fa-square-js animate__animated animate__heartBeat animate__slower "></i>
@@ -37,38 +35,42 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <i class="fa-solid fa-database animate__animated animate__heartBeat animate__slower "></i>
       </div>
       <div class="flex justify-around">
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-instagram"></i>
+        <a href="https://github.com/ulisacosta" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+        <a href="https://www.linkedin.com/in/adolfo-ulises-martin-acosta-4b124b186/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/ulisacosta/" target="_blank" > <i class="fa-brands fa-instagram"></i></a>
       </div>
     </header>
 
-    <section class="grid grid-cols-2 border-b-4 border-t-4 border-black mt-4">
-      <div class=" border-r-4 border-black">
-        <p class="text-center">ACOSTA ULISES <i class="fa-regular fa-circle-check"></i></p>
+    <section class="grid grid-cols-2 border-b-4 border-t-4 border-blue-800 mt-4">
+      <div class=" border-r-4 border-blue-800">
+        <p class="text-center text-2xl font-semibold max-[767px]:text-base">ACOSTA ULISES <i class="fa-regular fa-circle-check"></i></p>
       </div>
       <div class=" ">
-        <p class="text-center">DESARROLADOR WEB</p>
+        <p class="text-center text-2xl font-semibold max-[767px]:text-base">DESARROLADOR WEB</p>
       </div>
     </section>
 
-    <section class="border-2 w-2/4 border-black border-t-0 border-b-0 m-auto h-1/4">
+    <section class="border-4 w-2/4 border-blue-800 border-t-0 border-b-0 m-auto h-1/4">
 
-      <div class="border-b-2 border-black">
-        <p class="text-center">SOBRE MI</p>
+      <div class="border-b-0 border-blue-800">
+        <p class="text-center text-2xl font-medium max-[767px]:text-base">SOBRE MI</p>
       </div>
       <div>
-        <p class="text-center">p</p>
+        <p class="text-center">
+          Estudiante de Analista de Sistemas en el último año de la carrera, con enfoque en la programación y gran interés en el desarrollo web. Busco adquirir experiencia en el campo laboral y aplicar mis conocimientos para seguir creciendo profesionalmente en el área.
+          
+        </p>
       </div>
     </section>
 
-    <section class="border-t-2 border-black ">
-      <div class="mt-4">
-        <p class="text-center">TRABAJOS</p>
+    <section class="border-t-4 border-blue-800 ">
+      <div class="mt-4 border-l-0 border-r-0 border-4 border-blue-800">
+        <p class="text-center text-2xl font-semibold max-[767px]:text-base">TRABAJOS</p>
       </div>
+
       <div class="w-3/4 mx-auto mt-4 grid justify-around gap-4">
 
-        <div class="">
+        <div class="border-4 border-black">
 
           <section id="titronic-carousel" class="splide" aria-label="My Awesome Gallery">
             <div class="splide__track">
@@ -109,7 +111,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
         </div>
 
-        <div class="">
+        <div class="border-4 border-black mb-2">
+
           <section id="pokemon-carousel" class="splide" aria-label="Pokedex">
             <div class="splide__track">
               <ul class="splide__list">
@@ -146,6 +149,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </section>
   </main>
 
+<footer class=" ">
+  
+</footer>
+  
   <script>
     let splideTitronic = new Splide('#titronic-carousel', {
       pagination: false,
