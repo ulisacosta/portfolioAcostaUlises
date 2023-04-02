@@ -1,3 +1,5 @@
+
+
 .fa-brands, .fa-solid {
     font-size: 50px;
 }
@@ -40,7 +42,7 @@ color: #004ce8;
     color: #57a4ff;
 }
 
-.thumbnails {
+.thumbnails , .thumbnailsPoke {
     display: flex;
     margin: 1rem auto 0;
     padding: 0;
@@ -48,7 +50,7 @@ color: #004ce8;
   }
   
   
-  .thumbnail {
+  .thumbnail , .thumbnailPoke {
     width: 70px;
     height: 70px;
     overflow: hidden;
@@ -58,7 +60,7 @@ color: #004ce8;
   }
   
   
-  .thumbnail img {
+  .thumbnail img , .thumbnailPoke img{
     width: 100%;
     height: auto;
   }
@@ -73,4 +75,14 @@ color: #004ce8;
     .fa-brands,.fa-solid{
         font-size: 15px;
     }
+   
 }
+
+@media screen and (max-width:613px){
+ 
+      .thumbnail , .thumbnailPoke {
+        width: 50px;
+        height: 50px;
+      }
+      
+    }

@@ -2,161 +2,212 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <script src="https://kit.fontawesome.com/ffb2fdaeb4.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ffb2fdaeb4.js" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <script src="
+  <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
-    <link href="
+  <link href="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
 </head>
 
 <body class="flex flex-col justify-center items-center  ">
-   
-    <main class="container border-solid border-2 border-b-0 w-2/4 border-black">
-        <header class="grid grid-cols-2 border-b-4 border-black">
-            <div class="flex justify-around border-r-4 border-black">
-                <i class="fa-brands fa-html5 animate__animated animate__heartBeat animate__slower "></i>
-                <i class="fa-brands fa-css3 animate__animated animate__heartBeat animate__slower "></i>
-                <i class="fa-brands fa-square-js animate__animated animate__heartBeat animate__slower "></i>
-                <i class="fa-brands fa-node animate__animated animate__heartBeat animate__slower "></i>
-                <i class="fa-brands fa-git-alt animate__animated animate__heartBeat animate__slower "></i>
-                <i class="fa-solid fa-database animate__animated animate__heartBeat animate__slower "></i>
+
+  <main class="container border-solid border-2 border-b-0 w-3/4 border-black">
+    <header class="grid grid-cols-2 border-b-4 border-black">
+      <div class="flex justify-around border-r-4 border-black">
+        <i class="fa-brands fa-html5 animate__animated animate__heartBeat animate__slower "></i>
+        <i class="fa-brands fa-css3 animate__animated animate__heartBeat animate__slower "></i>
+        <i class="fa-brands fa-square-js animate__animated animate__heartBeat animate__slower "></i>
+        <i class="fa-brands fa-node animate__animated animate__heartBeat animate__slower "></i>
+        <i class="fa-brands fa-git-alt animate__animated animate__heartBeat animate__slower "></i>
+        <i class="fa-solid fa-database animate__animated animate__heartBeat animate__slower "></i>
+      </div>
+      <div class="flex justify-around">
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </header>
+
+    <section class="grid grid-cols-2 border-b-4 border-t-4 border-black mt-4">
+      <div class=" border-r-4 border-black">
+        <p class="text-center">ACOSTA ULISES <i class="fa-regular fa-circle-check"></i></p>
+      </div>
+      <div class=" ">
+        <p class="text-center">DESARROLADOR WEB</p>
+      </div>
+    </section>
+
+    <section class="border-2 w-2/4 border-black border-t-0 border-b-0 m-auto h-1/4">
+
+      <div class="border-b-2 border-black">
+        <p class="text-center">SOBRE MI</p>
+      </div>
+      <div>
+        <p class="text-center">p</p>
+      </div>
+    </section>
+
+    <section class="border-t-2 border-black ">
+      <div class="mt-4">
+        <p class="text-center">TRABAJOS</p>
+      </div>
+      <div class="w-3/4 mx-auto mt-4 grid justify-around gap-4">
+
+        <div class="">
+
+          <section id="titronic-carousel" class="splide" aria-label="My Awesome Gallery">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="img/loginTi.PNG" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/menuTi.PNG" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/cliente.PNG" alt="">
+                </li>
+                </li>
+                <li class="splide__slide">
+                  <img src="img/poliza.PNG" alt="">
+                </li>
+
+              </ul>
             </div>
-            <div class="flex justify-around">
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-instagram"></i>
+          </section>
+
+
+          <ul id="thumbnails" class="thumbnails">
+            <li class="thumbnail">
+              <img src="img/loginTi.PNG" alt="">
+            </li>
+            <li class="thumbnail">
+              <img src="img/menuTi.PNG" alt="">
+            </li>
+            <li class="thumbnail">
+              <img src="img/cliente.PNG" alt="">
+            </li>
+            <li class="thumbnail">
+              <img src="img/poliza.PNG" alt="">
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="">
+          <section id="pokemon-carousel" class="splide" aria-label="Pokedex">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="img/mainPoke.PNG" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/buscadorPoke.PNG" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/buscadorPoke2.PNG" alt="">
+                </li>
+
+              </ul>
             </div>
-        </header>
-
-        <section class="grid grid-cols-2 border-b-4 border-t-4 border-black mt-4">
-            <div class=" border-r-4 border-black">
-                <p class="text-center">ACOSTA ULISES <i class="fa-regular fa-circle-check"></i></p>
-            </div>
-            <div class=" ">
-                <p class="text-center">Web developer</p>
-            </div>
-        </section>
-
-        <section class="border-2 w-2/4 border-black border-t-0 border-b-0 m-auto h-1/4">
-
-            <div class="border-b-2 border-black">
-                <p class="text-center">SOBRE MI</p>
-            </div>
-            <div>
-                <p class="text-center">p</p>
-            </div>
-        </section>
-
-        <section class="border-t-2 border-black ">
-            <div class="mt-4">
-                <p class="text-center">TRABAJOS</p>
-            </div>
-            <div class="w-3/4 mx-auto mt-4 grid justify-around gap-4">
-                <div class="">
-
-                    <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
-                        <div class="splide__track">
-                          <ul class="splide__list">
-                            <li class="splide__slide">
-                              <img src="img/LOGIN.PNG" alt="">
-                            </li>
-                            <li class="splide__slide">
-                              <img src="img/LOGIN.PNG" alt="">
-                            </li>
-                            <li class="splide__slide">
-                              <img src="img/LOGIN.PNG" alt="">
-                            </li>
-                            <li class="splide__slide">
-                              <img src="img/LOGIN.PNG" alt="">
-                            </li>
-                          </ul>
-                        </div>
-                      </section>
-                      
-                      
-                      <ul id="thumbnails" class="thumbnails">
-                        <li class="thumbnail">
-                          <img src="img/LOGIN.PNG" alt="">
-                        </li>
-                        <li class="thumbnail">
-                          <img src="img/LOGIN.PNG" alt="">
-                        </li>
-                        <li class="thumbnail">
-                          <img src="img/LOGIN.PNG" alt="">
-                        </li>
-                        <li class="thumbnail">
-                          <img src="img/LOGIN.PNG" alt="">
-                        </li>
-                      </ul>
-
-                </div>
-
-                <div class="border-2">
-                    <img src="img/LOGIN.PNG" alt="">
-                </div>
-
-            </div>
-        </section>
-    </main>
-
-    <script>
-        
-        var splide = new Splide( '#main-carousel', {
-  pagination: false,
-} );
+          </section>
 
 
-var thumbnails = document.getElementsByClassName( 'thumbnail' );
-var current;
+          <ul id="thumbnailsPoke" class="thumbnailsPoke">
+            <li class="thumbnailPoke">
+              <img src="img/mainPoke.PNG" alt="">
+            </li>
+            <li class="thumbnailPoke">
+              <img src="img/buscadorPoke.PNG" alt="">
+            </li>
+            <li class="thumbnailPoke">
+              <img src="img/buscadorPoke2.PNG" alt="">
+            </li>
 
+          </ul>
+        </div>
 
-for ( var i = 0; i < thumbnails.length; i++ ) {
-  initThumbnail( thumbnails[ i ], i );
-}
+      </div>
+    </section>
+  </main>
 
+  <script>
+    let splideTitronic = new Splide('#titronic-carousel', {
+      pagination: false,
+    });
 
-function initThumbnail( thumbnail, index ) {
-  thumbnail.addEventListener( 'click', function () {
-    splide.go( index );
-  } );
-}
+    let thumbnailsTitronic = document.getElementsByClassName('thumbnail');
 
-
-splide.on( 'mounted move', function () {
-  var thumbnail = thumbnails[ splide.index ];
-
-
-  if ( thumbnail ) {
-    if ( current ) {
-      current.classList.remove( 'is-active' );
+    for (let i = 0; i < thumbnailsTitronic.length; i++) {
+      initThumbnail(thumbnailsTitronic[i], i, splideTitronic);
     }
 
+    splideTitronic.on('mounted move', function () {
+      let thumbnailTitronic = thumbnailsTitronic[splideTitronic.index];
 
-    thumbnail.classList.add( 'is-active' );
-    current = thumbnail;
-  }
-} );
+      if (thumbnailTitronic) {
+        if (current) {
+          current.classList.remove('is-active');
+        }
+
+        thumbnailTitronic.classList.add('is-active');
+        current = thumbnailTitronic;
+      }
+    });
+
+    splideTitronic.mount();
 
 
-splide.mount();
-    </script>
-    
-    <script src="index.js"></script>
+    let splidePokemon = new Splide('#pokemon-carousel', {
+      pagination: false,
+    });
+
+    let thumbnailsPokemon = document.getElementsByClassName('thumbnailPoke');
+
+    for (let i = 0; i < thumbnailsPokemon.length; i++) {
+      initThumbnail(thumbnailsPokemon[i], i, splidePokemon);
+    }
+
+    splidePokemon.on('mounted move', function () {
+      let thumbnailPokemon = thumbnailsPokemon[splidePokemon.index];
+
+      if (thumbnailPokemon) {
+        if (currentPoke) {
+          currentPoke.classList.remove('is-active');
+        }
+
+        thumbnailPokemon.classList.add('is-active');
+        currentPoke = thumbnailPokemon;
+      }
+    });
+
+    splidePokemon.mount();
+
+
+    function initThumbnail(thumbnail, index, splide) {
+      thumbnail.addEventListener('click', function () {
+        splide.go(index);
+      });
+    }
+
+  </script>
+
+  <script src="index.js"></script>
 
 
 </body>
