@@ -73,7 +73,7 @@
         <p class="text-center text-2xl font-semibold max-[767px]:text-base">TRABAJOS</p>
       </div>
 
-      <div class="w-3/4 mx-auto mt-4 grid justify-around gap-4">
+      <div class="w-3/4 mx-auto mt-4 mb-4 grid justify-around gap-4">
 
         <div class="border-4 border-black">
 
@@ -225,23 +225,80 @@
             </li>
             <li class="thumbnailPoke">
               <img
-                src="https://res.cloudinary.com/dphsynf6f/image/upload/v1680556400/portfolio/pokedex/zvmf5u6jtaqsw1gjpmks.png"
-                alt="">
+              src="https://res.cloudinary.com/dphsynf6f/image/upload/v1680556400/portfolio/pokedex/zvmf5u6jtaqsw1gjpmks.png"
+              alt="">
             </li>
+            
+          </ul>
+          
+          <div class="flex justify-center gap-4">
+           
+            <i class="fa-brands fa-html5 "></i>
+              <i class="fa-brands fa-css3  "></i>
+              <i class="fa-brands fa-square-js"></i>
+              
+              
+              <a href="https://github.com/ulisacosta/pokedex" target="_blank"><i class="fa-brands fa-github "></i></a>
+              <a href="https://pokedexuli.000webhostapp.com/" target="_blank"><i class="fa-solid fa-globe "></i></a>
+              
+          </div>
 
+        </div>
+
+        <div class="border-4 border-black">
+
+          <section id="imgDragAndDrop-carousel" class="splide" aria-label="Drag and drop">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <a href="https://res.cloudinary.com/dphsynf6f/image/upload/v1691765190/portfolio/imgDragAndDrop/index.png"
+                    target="__blank">
+                    <img
+                      src="https://res.cloudinary.com/dphsynf6f/image/upload/v1691765190/portfolio/imgDragAndDrop/index.png"
+                      alt="indexImgDragAndDrop">
+                  </a>
+                </li>
+              
+                <li class="splide__slide">
+                  <a href="https://res.cloudinary.com/dphsynf6f/image/upload/v1691765189/portfolio/imgDragAndDrop/imgUpload.png"
+                    target="__blank">
+                    <img
+                      src="https://res.cloudinary.com/dphsynf6f/image/upload/v1691765189/portfolio/imgDragAndDrop/imgUpload.png"
+                      alt="uploadImgDragAndDrop">
+                  </a>
+                </li>
+       
+
+              </ul>
+            </div>
+
+          </section>
+
+
+          <ul id="thumbnailsImgDragAndDrop" class="thumbnailsImgDragAndDrop">
+            <li class="thumbnailImgDragAndDrop">
+              <img
+                src="https://res.cloudinary.com/dphsynf6f/image/upload/v1691765190/portfolio/imgDragAndDrop/index.png"
+                alt="indexImgDragAndDrop">
+            </li>
+            <li class="thumbnailImgDragAndDrop">
+              <img
+                src="https://res.cloudinary.com/dphsynf6f/image/upload/v1691765189/portfolio/imgDragAndDrop/imgUpload.png"
+                alt="uploadImgDragAndDrop">
+            </li>
+            
           </ul>
 
           <div class="flex justify-center gap-4">
-           
-              <i class="fa-brands fa-html5 "></i>
-              <i class="fa-brands fa-css3  "></i>
-              <i class="fa-brands fa-square-js"></i>
-        
-            
-              <a href="https://github.com/ulisacosta/pokedex" target="_blank"><i class="fa-brands fa-github "></i></a>
+            <i class="fa-brands fa-html5 "></i>
+            <i class="fa-brands fa-css3  "></i>
+            <i class="fa-brands fa-square-js  "></i>
+            <i class="fa-brands fa-node"></i>
+
+            <a href="https://github.com/ulisacosta/imgDragAndDrop" target="_blank"><i class="fa-brands fa-github "></i></a>
+            <a href="https://draganddropau.onrender.com/" target="_blank"><i class="fa-solid fa-globe "></i></a>
        
           </div>
-
         </div>
 
       </div>
@@ -252,73 +309,8 @@
 
   </footer>
 
-  <script>
-    let splideTitronic = new Splide('#titronic-carousel', {
-      type: 'fade',
-      pagination: true,
-      autoplay:'play',
-      rewind: true,
-      
-      interval:  5000
-      
-    });
 
-    let thumbnailsTitronic = document.getElementsByClassName('thumbnail');
-
-    for (let i = 0; i < thumbnailsTitronic.length; i++) {
-      initThumbnail(thumbnailsTitronic[i], i, splideTitronic);
-    }
-
-    splideTitronic.on('mounted move', function () {
-      let thumbnailTitronic = thumbnailsTitronic[splideTitronic.index];
-
-      if (thumbnailTitronic) {
-        if (current) {
-          current.classList.remove('is-active');
-        }
-
-        thumbnailTitronic.classList.add('is-active');
-        current = thumbnailTitronic;
-      }
-    });
-
-    splideTitronic.mount();
-
-
-    let splidePokemon = new Splide('#pokemon-carousel', {
-      pagination: false,
-    });
-
-    let thumbnailsPokemon = document.getElementsByClassName('thumbnailPoke');
-
-    for (let i = 0; i < thumbnailsPokemon.length; i++) {
-      initThumbnail(thumbnailsPokemon[i], i, splidePokemon);
-    }
-
-    splidePokemon.on('mounted move', function () {
-      let thumbnailPokemon = thumbnailsPokemon[splidePokemon.index];
-
-      if (thumbnailPokemon) {
-        if (currentPoke) {
-          currentPoke.classList.remove('is-active');
-        }
-
-        thumbnailPokemon.classList.add('is-active');
-        currentPoke = thumbnailPokemon;
-      }
-    });
-
-    splidePokemon.mount();
-
-
-    function initThumbnail(thumbnail, index, splide) {
-      thumbnail.addEventListener('click', function () {
-        splide.go(index);
-      });
-    }
-
-  </script>
-
+<script src="js/sliders.js"></script>
   <script src="index.js"></script>
 
 
