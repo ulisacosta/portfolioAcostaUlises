@@ -1,3 +1,4 @@
+/* SPLIDE TITRONIC */
 let splideTitronic = new Splide('#titronic-carousel', {
     type: 'fade',
     pagination: true,
@@ -30,6 +31,7 @@ let splideTitronic = new Splide('#titronic-carousel', {
   splideTitronic.mount();
 
 
+  /* SPLIDE POKEDEX */
   let splidePokemon = new Splide('#pokemon-carousel', {
     pagination: false,
   });
@@ -55,6 +57,8 @@ let splideTitronic = new Splide('#titronic-carousel', {
 
   splidePokemon.mount();
 
+
+/* SPLIDE DRAG AND DROP */
   let splideDragAndDrop = new Splide('#imgDragAndDrop-carousel', {
     pagination: false,
   });
@@ -80,6 +84,31 @@ let splideTitronic = new Splide('#titronic-carousel', {
 
   splideDragAndDrop.mount();
 
+/* SPLIDE PAGINA SAN MIGUEL */
+let splideSanMiguel = new Splide('#sanmiguel-carousel', {
+  pagination: false,
+});
+
+let thumbnailsSanMiguel = document.getElementsByClassName('thumbnailSanMiguel');
+
+for (let i = 0; i < thumbnailsSanMiguel.length; i++) {
+  initThumbnail(thumbnailsSanMiguel[i], i, splideSanMiguel);
+}
+
+splideSanMiguel.on('mounted move', function () {
+  let thumbnailSanMiguel = thumbnailsSanMiguel[splideSanMiguel.index];
+
+  if (thumbnailSanMiguel) {
+    if (currentSanMiguel) {
+      currentSanMiguel.classList.remove('is-active');
+    }
+
+    thumbnailSanMiguel.classList.add('is-active');
+    currentSanMiguel = thumbnailSanMiguel;
+  }
+});
+
+splideSanMiguel.mount();
 
 
   function initThumbnail(thumbnail, index, splide) {

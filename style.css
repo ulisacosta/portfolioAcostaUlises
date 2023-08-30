@@ -42,8 +42,7 @@ color: #004ce8;
     color: #57a4ff;
 }
 
-.thumbnails , .thumbnailsPoke,
-.thumbnailsImgDragAndDrop {
+.thumbnails  {
     display: flex;
     margin: 1rem auto 0;
     padding: 0;
@@ -52,7 +51,7 @@ color: #004ce8;
   
   
   .thumbnail , .thumbnailPoke,
-  .thumbnailImgDragAndDrop {
+  .thumbnailImgDragAndDrop,.thumbnailSanMiguel {
     width: 80px;
     height: 80px;
     overflow: hidden;
@@ -63,7 +62,7 @@ color: #004ce8;
   
   
   .thumbnail img , .thumbnailPoke img,
-  .thumbnailImgDragAndDrop img {
+  .thumbnailImgDragAndDrop img,.thumbnailSanMiguel img{
     width: 100%;
     height: auto;
   }
@@ -86,7 +85,7 @@ color: #004ce8;
 @media screen and (min-width:0px){
  
     .thumbnail , .thumbnailPoke,
-    .thumbnailImgDragAndDrop {
+    .thumbnailImgDragAndDrop,.thumbnailSanMiguel {
         width: 50px;
         height: 50px;
       }
